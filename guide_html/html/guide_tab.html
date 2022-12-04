@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<script src="../js/guide_include.js"></script>
+<script>include.meta()</script>
+<script>include.head()</script>
+</head>
+<body>
+<div class="g-wrapper" class="g-convention-wrap">
+	<script>include.header()</script>
+	<div class="g-container">
+		<script>include.aside.init()</script>
+
+		<!-- Content -->
+		<article class="g-content" class="">
+			<div class="g-content-header">
+				<h1 class="g-h1">tab</h1>
+			</div>
+			<div class="g-content-body">
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">type01</h2>
+					</div>
+					<div class="g-section-body" style="background:#2962ff;color:#fff;">
+						<div class="tab-type01">
+							<ul>
+								<li><a href="#tab-box01" class="tabview-link"><span>탭1</span></a></li>
+								<li><a href="#tab-box02" class="tabview-link"><span>탭2</span></a></li>
+								<li><a href="#"><span>탭3</span></a></li>
+							</ul>
+						</div>
+
+						<div id="tab-box01">내용1</div>
+						<div id="tab-box02" style="display:none;">내용2</div>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+	</div>
+	<div class="g-mask"></div>
+</div>
+</body>
+</html>

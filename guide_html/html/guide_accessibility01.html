@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<script src="../js/guide_include.js"></script>
+<script>include.meta()</script>
+<script>include.head()</script>
+</head>
+<body>
+<div class="g-wrapper" class="g-convention-wrap">
+	<script>include.header()</script>
+	<div class="g-container">
+		<script>include.aside.init()</script>
+
+		<!-- Content -->
+		<article class="g-content" class="">
+			<div class="g-content-header">
+				<h1 class="g-h1">웹접근성 개요</h1>
+			</div>
+			<div class="g-content-body">
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">웹 접근성이란?</h2>
+					</div>
+					<div class="g-section-body">
+						<ul class="g-desc">
+							<li>월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란	'장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 공간'이라고 정의하였으며,	웹 콘텐츠를 제작할 때에는 장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.</li>
+							<li>하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다. 즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가 대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는 것이다. 예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다. 이러한 접근성 개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및 중요성이 더욱 증대되고 있다.</li>
+							<li>월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)웹 접근성 이니셔티브(WAI: Web Accessibility Initiative)링크와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이 있다고 보는 관점이다. 인터넷 전자도서관인 Wikipedia 는 웹 접근성의 개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.</li>
+						</ul>	
+					</div>
+				</section>
+
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">웹 접근성 및 정보통신 접근성에 대한 주요 정의</h2>
+					</div>
+					<div class="g-section-body">
+						<div class="g-tbl-type01">
+							<table summary="웹 접근성 및 정보통신 접근성에 대한 주요 정의를 나타낸 표로 장애인/노인 등의 정보통신 접근성 향상을 위한 권장지침과 웹 접근성 이니셔티브, Wikipedia, 한국지능정보사회진흥원으로 구분하고 구분에 따른 정의를 나타냅니다.">
+								<caption>웹 접근성 및 정보통신 접근성에 대한 주요 정의 </caption>
+								<colgroup>
+								<col width="30%">
+								<col width="*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="first">구분</th>
+										<th scope="col">정의</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="first"><strong class="green">장애인·노인 등의 정보통신<br> 접근성 향상을 위한 권장지침 </strong></td>
+										<td class="br_none">정보통신 제품과 서비스를 활용하고자 하는 사람에게 이의 활용 가능성이 제공되는 것</td>
+									</tr>
+									<tr>
+										<td class="first"><strong class="green">웹 접근성 이니셔티브</strong><br> (<a href="http://www.w3.org/WAI/intro/accessibility.php" title="WAI: Web Accessibility Initiative 사이트로 이동">WAI: Web Accessibility Initiative</a>)</td>
+										<td class="br_none">장애를 가진 사람들도 웹을 이용할 수 있도록 보장하는 것으로, 장애를 가진 사람들이 웹 콘텐츠를 <span class="orange">인지하고(Perceivable), 운영하고(Operable), 이해하고(Understandable)</span>, 기술에 상관없이 이용할 수 있도록 견고한(Robust)하게 웹콘텐츠를 만드는 것</td>
+									</tr>
+									<tr>
+										<td class="first"><strong class="green"><a class="green" href="http://en.wikipedia.org/wiki/Web_accessibility" title="Wikipedia 사이트로 이동">Wikipedia</a></strong></td>
+										<td class="br_none">표준 브라우저 뿐만 아니라 다양한 사용자 에이전트(User Agent)를 사용하는 사람들이 웹 페이지에 접근하기 쉽게 만드는 것으로, 이를 통해 장애인들도 웹을 사용할 수 있도록 보장하는 것</td>
+									</tr>
+									<tr>
+										<td class="first"><strong class="green"><a class="green" href="http://www.nia.or.kr" title="한국지능정보사회진흥원 사이트로 이동">한국지능정보사회진흥원</a></strong></td>
+										<td class="br_none"><span class="orange">어떠한 사용자(장애인, 노인 등)</span>, 어떠한 기술환경에서도 사용자가 전문적인 능력 없이 웹 사이트에서 제공하는 모든 정보에 접근할 수 있도록 보장하는 것</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">웹접근성 이용자 유형</h2>
+					</div>
+					<div class="g-section-body">
+						<ul class="g-desc">
+							<li>시각을 통해 정보를 인지할 수 없는 시각 장애가 있는 경우</li>
+							<li>청각을 통해 음향 정보를 인지하지 못하는 청각 장애가 있는 경우</li>
+							<li>신경계의 마비, 근골격계의 마비 또는 선천성 기형 등으로 신체의 움직임에 제한이 있는 지체 장애가 있는 경우</li>
+							<li>읽기나 문장 이해력이 떨어지는 언어 장애가 있는 경우</li>
+							<li>키보드나 마우스를 사용할 수 없는 장애가 있는 경우</li>
+							<li>시각, 청각 또는 손을 사용하고 있어 해야 하는 일을 할 수 없는 경우<br>&nbsp;&nbsp;
+								(운전 중이거나 소음이 많은 곳에서 일하는 경우 등 장애라기보다는 웹 사용자가 처한 환경에 따라 제한 받는 경우)
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">웹접근성 관련사이트</h2>
+					</div>
+					<div class="g-section-body">
+						<ul class="g-desc">
+							<li>웹접근성 연구소 <a href="https://www.wah.or.kr:444/index.asp" target="blink">바로가기</a></li>
+							<li>NAVER Accessibility <a href="https://accessibility.naver.com/" target="blink">바로가기</a></li>
+							<li>한국시각장애인연합회 <a href="http://www.kbuwel.or.kr/" target="blink">바로가기</a></li>
+							<li>WebWatch <a href="http://www.webwatch.or.kr/" target="blink">바로가기</a></li>
+							<li>웹 접근성 점검 매뉴얼 <a href="https://www.wah.or.kr:444/board/boardView.asp?page=3&brd_sn=4&brd_idx=581" target="blink">바로가기</a></li>
+							<li>웹 접근성 품질인증 표준심사 지침 <a href="http://www.webwatch.or.kr/include/fileDown.asp?filename=%uC6F9%20%uC811%uADFC%uC131%20%uD488%uC9C8%uC778%uC99D%20%uD45C%uC900%uC2EC%uC0AC%20%uC9C0%uCE68.pdf">다운로드</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+	</div>
+	<div class="g-mask"></div>
+</div>
+</body>
+</html>

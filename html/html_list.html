@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>K-CURE 포털</title>
+<!-- style -->
+<style type="text/css">
+	* {	margin:0;padding:0;}
+	body {padding:20px;	font-family:Tahoma, Sans-Serif; color:#333; font-size:11px; background-color:#fff;}
+	h1 {color:#000;padding-bottom: 20px;}
+	.currentsite {display:block; position:absolute; right:40px; top:20px;}
+	#mwork fieldset {border:none;}
+	#mwork legend {display:none;}
+	#mwork table {width:100%; border-collapse:collapse; border:1px solid #666;}
+	#mwork caption {text-align:left; font-size:200%; color:#999;}
+	#mwork .index td {background:#ccc;}
+	#mwork .indexred td {background:#fdd;}
+	#mwork .indexgreen td {background:#dfd;}
+	#mwork .indexblue td {background:#ddf;}
+	#mwork .indexyellow td {background:#fff1c7;}
+	#mwork .line td {border-top:3px solid #666;}
+	#mwork .line2 td {border-top:2px solid #666;}
+	#mwork th {padding:6px; border:1px solid #666; color:#ccc; font-size:110%; background-color:#000;}
+	#mwork td {padding:4px; padding-left:10px; border:1px solid #666; background-color:#eee;}
+	#mwork td.type,
+	#mwork .filename {padding-left:0; text-align:center;}
+	#mwork .memo {color:#000;}
+	#mwork .stroryborad,
+	#mwork .psd,
+	#mwork .html,
+	#mwork .developer {padding:0; text-align:center; color:#000;}
+	#mwork .undone {padding:0; font-weight:bold; text-align:center; color:#900;}
+	#mwork a,
+	#mwork a:link, #mwork a:visited {color:#009; text-decoration:none;}
+	#mwork a:hover, #mwork a:active {color:#00f; text-decoration:underline;}
+	#mwork td:hover {background-color:#ddd;}
+	#mwork del {color:#900;}
+	#mwork .add {color:#900;}
+	#note {margin:10px 0 10px 0; padding:10px; border:2px dotted #000; background:#eee; letter-spacing:0;}
+	#note p {padding-left:10px;}
+	#note pre {margin-top:10px; margin-bottom:10px; font-family:Tahoma, Sans-Serif; color:#333; font-size:small;}
+	#note h2 {margin:0px 0 10px 0;}
+	#note .notice{color:red;}
+	#note .comment {display:block; margin:5px 0 10px 0; color:#666;}
+	#note .issue {color:#900;}
+	#note .add {color:#900; font-weight:bold;}
+	#note ul li {margin-left:20px;}
+	td em {color:#f00; font-style:normal;}
+	td strong {color:red; font-weight:normal;}
+	tr.orange td{background-color:#FFE4CA !important;}
+	tr.purple td{background-color:#F1E6FF !important;}
+	tr.green td{background-color:#DEEED5 !important;}
+	tr.yellow td{background-color:#FCFBDC !important;}
+	tr.blue td{background-color:#E1F5FD !important;}
+	tr.red td{background-color:#FFE6E7 !important;}
+	tr.white td{background-color:#FFF !important;}
+	tr.brown td{background-color:#E6DCD2 !important;}
+	.redfont {color:#f00;}
+	.modify {margin-top:5px; padding:5px; border:1px dotted #000; font-size:13px; background-color:#ccc;}
+	.modify h2 {margin-bottom:3px;}
+</style>
+<!-- //style -->
+<!-- html body -->
+</head>
+<body>
+<!-- sheet -->
+<h1>K-CURE 포털 html list</h1>
+<div id="mwork">
+	<table class="mwork" summary="WebPublisher Procedure Sheet" border="1">
+		<colgroup>
+			<col width="11%" span="4">
+			<col width="6%">
+			<col width="8%" span="4">
+			<col width="18%">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>4Depth</th>
+			<th>Directory</th>
+			<th>FileName/Link</th>
+			<th><abbr title="SB">SB</abbr></th>
+			<th><abbr title="Design">Design</abbr></th>
+			<th><abbr title="HTML">HTML</abbr></th>
+			<th><abbr title="memo">메모</abbr></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="depth1">메인페이지</td>
+			<td class="depth2">&nbsp;</td>
+			<td class="depth3">&nbsp;</td>
+			<td class="depth4">&nbsp;</td>
+			<td class="directory">main</td>
+			<td class="filename"><a target="_blank" href="main/main.html">main.html</a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr>
+			<td class="depth1">서브레이아웃</td>
+			<td class="depth2"></td>
+			<td class="depth3">&nbsp;</td>
+			<td class="depth4">&nbsp;</td>
+			<td class="directory">layout</td>
+			<td class="filename"><a target="_blank" href="layout/sub_layout.html">sub_layout.html</a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"></td>
+		</tr>
+		<tr>
+			<td class="depth1">공통</td>
+			<td class="depth2">검색</td>
+			<td class="depth3">&nbsp;</td>
+			<td class="depth4">&nbsp;</td>
+			<td class="directory"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth1" rowspan="8">데이터 조회</td>
+			<td class="depth2">데이터 조회개요</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="8"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2">데이터시각화</td>
+			<td class="depth3">대시보드</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2"></td>
+			<td class="depth3">상세 그래프</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2"></td>
+			<td class="depth3">콘텐츠</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2">데이터 카탈로그</td>
+			<td class="depth3">칼럼 조회</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2"></td>
+			<td class="depth3">코드 조회</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2"></td>
+			<td class="depth3">용어사전</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="blue">
+			<td class="depth2">외부데이터</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth1" rowspan="6">데이터 신청</td>
+			<td class="depth2">데이터 신청 개요</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="6"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth2">데이터 활용 신청 및 조회</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth2">안심활용센터 사용신청 및 조회</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth2">데이터 반입출 신청 및 조회</td>
+			<td class="depth3">반입 신청 및 조회</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth2"></td>
+			<td class="depth3">반출 신청 및 조회</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="orange">
+			<td class="depth2">Open API 신청 및 조회</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="purple">
+			<td class="depth1" rowspan="4">데이터 활용</td>
+			<td class="depth2">데이터 활용 개요</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="purple">
+			<td class="depth2">데이터 활용 교육</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="purple">
+			<td class="depth2">데이터 활용 실습</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="purple">
+			<td class="depth2">데이터 활용 사례</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="green">
+			<td class="depth1" rowspan="4">이용안내</td>
+			<td class="depth2">공지사항</td>
+			<td class="depth3">list</td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="green">
+			<td class="depth2"></td>
+			<td class="depth3">view</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="green">
+			<td class="depth2">이용가이드</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="green">
+			<td class="depth2">FAQ</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="yellow">
+			<td class="depth1" rowspan="4">사업소개</td>
+			<td class="depth2">K-CURE 사업소개</td>
+			<td class="depth3">안심활용센터 소개</td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="yellow">
+			<td class="depth2">운영조직 소개</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="yellow">
+			<td class="depth2">참여기관 소개</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="yellow">
+			<td class="depth2">홍보</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth1" rowspan="14">HEADER</td>
+			<td class="depth2">로그인</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="14"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">아이디찾기</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">비밀번호찾기</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">회원가입</td>
+			<td class="depth3">회원가입</td>
+			<td class="depth4">약관동의</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="depth4">본인인증</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="depth4">회원정보입력</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="depth4">회원가입완료</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">디지털패스원</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">간편인증</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2">마이페이지</td>
+			<td class="depth3">나의 정보관리<br>(회원정보관리)</td>
+			<td class="depth4">내역</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="depth4">비밀번호변경</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="depth4">회원탈퇴</td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3">신청이력조회<br>(데이터서비스신청현황)</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr class="brown">
+			<td class="depth2"></td>
+			<td class="depth3">신청진행조회</td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr>
+			<td class="depth1" rowspan="3">FOOTER</td>
+			<td class="depth2">개인정보처리방침</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="directory" rowspan="3"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr>
+			<td class="depth2">이메일무단수집거부</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		<tr>
+			<td class="depth2">관련사이트바로가기</td>
+			<td class="depth3"></td>
+			<td class="depth4"></td>
+			<td class="filename"><a target="_blank" href=""></a></td>
+			<td class="stroryborad"></td>
+			<td class="psd"></td>
+			<td class="html"></td>
+			<td class="memo"><strong></strong></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //sheet -->
+<!-- //html body -->
+</body></html>

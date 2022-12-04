@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<script src="../js/guide_include.js"></script>
+<script>include.meta()</script>
+<script>include.head()</script>
+</head>
+<body>
+<div class="g-wrapper" class="g-convention-wrap">
+	<script>include.header()</script>
+	<div class="g-container">
+		<script>include.aside.init()</script>
+
+		<!-- Content -->
+		<article class="g-content" class="">
+			<div class="g-content-header">
+				<h1 class="g-h1">네임규칙</h1>
+			</div>
+			<div class="g-content-body">
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">표기법</h2>
+					</div>
+					<div class="g-section-body">
+						<div class="g-tbl-type01">
+							<table>
+								<caption>공통 네이밍 규칙 예</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:25%">
+									<col style="width:25%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>종류</th>
+										<th>구분</th>
+										<th>번호</th>
+										<th>예시</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align-l">ID Selector</td>
+										<td class="align-l">카멜표기법 (camelCase)</td>
+										<td class="align-l">두 자리수 (생략가능, 02, 03)</td>
+										<td class="align-l">errorMesage, controlCenter, controlCenter02</td>
+									</tr>
+									<tr>
+										<td class="align-l">Class Selector</td>
+										<td class="align-l">스네이크 표기법 (hyphen-nate)</td>
+										<td class="align-l">두 자리수 (생략가능, 02, 03)</td>
+										<td class="align-l">tab-page, tbl-type01, tbl-type02</td>
+									</tr>
+									<tr>
+										<td class="align-l">Image</td>
+										<td class="align-l">스네이크 표기법 (underbar_nate)</td>
+										<td class="align-l">두 자리수 (01, 02, 03)</td>
+										<td class="align-l">btn_cancle01_off.gif</td>
+									</tr>
+									<tr>
+										<td class="align-l">파일 및 폴더</td>
+										<td class="align-l">스네이크 표기법 (underbar_nate)</td>
+										<td class="align-l">두 자리수 (01, 02, 03)</td>
+										<td class="align-l">board_list.html</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">ID 선택자</h2>
+					</div>
+					<div class="g-section-body">						
+						<div class="g-tbl-type01">
+							<table>
+								<caption>예약어</caption>
+								<colgroup>
+									<col span="2" style="width:25%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>예약어</th>
+										<th>설명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="8">사이트 레이아웃</td>
+										<td>#wrap</td>
+										<td>사이트 전체영역</td>
+									</tr>
+									<tr>
+										<td>#skipNav</td>
+										<td>바로가기 영역</td>
+									</tr>
+									<tr>
+										<td>#header</td>
+										<td>머리글 영역</td>
+									</tr>
+									<tr>
+										<td>#container</td>
+										<td>페이지 영역</td>
+									</tr>
+									<tr>
+										<td>#aside</td>
+										<td>사이드 영역</td>
+									</tr>
+									<tr>
+										<td>#content</td>
+										<td>본문 영역</td>
+									</tr>
+									<tr>
+										<td>#footer</td>
+										<td>바닥글 영역</td>
+									</tr>
+									<tr>
+										<td>#popXXX</td>
+										<td>레이어팝업 페이지별 ID</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>						
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+	</div>
+	<div class="g-mask"></div>
+</div>
+</body>
+</html>

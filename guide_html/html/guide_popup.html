@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<script src="../js/guide_include.js"></script>
+<script>include.meta()</script>
+<script>include.head()</script>
+</head>
+<body>
+<div class="g-wrapper" class="g-convention-wrap">
+	<script>include.header()</script>
+	<div class="g-container">
+		<script>include.aside.init()</script>
+
+		<!-- Content -->
+		<article class="g-content" class="">
+			<div class="g-content-header">
+				<h1 class="g-h1">layer popup</h1>
+			</div>
+			<div class="g-content-body">
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">type01</h2>
+					</div>
+					<div class="g-section-body">
+						<!-- popup-open -->
+						<button type="button" onclick="layerOpen('#pop-name');" id="btn-name" class="btn-layeropen"><span>Popup Open</span></button>
+						
+						
+						<!-- layerpop-wrap -->
+						<div class="layerpop-wrap" id="pop-name">
+							<div class="layerpop-inbox">
+								<div class="laypop-head">타이틀</div>
+								<div class="laypop-body">
+									<div style="height:500px;"></div>
+								</div>
+								<div class="laypop-foot"></div>
+								<button type="button" onclick="layerClose('#pop-name','#btn-name');" class="btn-layerclose"><span>Popup close</span></button>
+							</div>
+						</div>
+						<!-- //layerpop-wrap -->
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+	</div>
+	<div class="g-mask"></div>
+</div>
+</body>
+</html>

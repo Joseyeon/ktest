@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" />
+<meta name="title" content="" />
+<meta name="keyword" content="" />
+<meta name="description" content="" />
+<title>분류명 - 페이지명 | Project Name</title>
+
+<link rel="stylesheet" href="../../css/common.css" />
+<link rel="stylesheet" href="../../css/style.css" />
+
+<script src="../../js/plugin/jquery-3.6.1.min.js"></script>
+<script src="../../js/plugin/slick.min.js"></script>
+<script src="../../js/plugin/vegas.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/main.js"></script>
+</head>
+<body>
+<!--<div class="topnotice-wrap">
+	<p>알림영역</p>
+	<button type="button" class="btn-ntclose"><span>닫기</span></button>
+</div> -->
+<div id="wrap" class="main-wrap">
+	<div id="skipNav">
+		<a href="#content">본문으로 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+	</div>
+
+	<!-- header -->
+	<header id="header">
+		<div class="header-wrap">
+			<div class="header-inbox">
+				<h1 class="logo"><a href="/" title="메인페이지로 이동"><span class="blind">K-CURE 운영관리 포털</span></a></h1>
+				<ul class="top-link01">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+				</ul>
+				<div class="top-link02">
+					<div class="sccontrol-box">
+						<span>화면크기</span>
+						<button type="button" class="zoom-plus"><span class="blind">화면확대</span></button>
+						<button type="button" class="zoom-minus"><span class="blind">화면축소</span></button>
+					</div>
+					<button type="button" class="btn-searchopen"><span class="blind">통합검색 열기</span></button>
+					<button type="button" class="btn-allmenuopen">
+						<span class="bar"></span>
+						<span class="bar num02"></span>
+						<span class="bar"></span>
+						<span class="blind">전체메뉴 열기</span>
+					</button>
+				</div>
+			</div>
+			<!-- gnb -->
+			<div id="gnb-bg"></div>
+			<nav id="gnb">
+				<ul class="gnb">
+					<li class="li-num01"><span class="a-depth01"><a href="#">데이터 소개</a></span>
+						<div class="submenu-wrap">
+							<ul class="munu-depth01">
+								<li><a href="#">라이브러리 소개</a></li>
+								<li class="yesdepth"><a href="#">임상 라이브러리</a>
+									<div class="submenu-wrap02">
+										<ul class="munu-depth02">
+											<li><a href="#">개요</a></li>
+											<li><a href="#">카탈로그</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="yesdepth"><a href="#">공공 라이브러리</a>
+									<div class="submenu-wrap02">
+										<ul class="munu-depth02">
+											<li><a href="#">개요</a></li>
+											<li><a href="#">카탈로그</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="yesdepth subwrapbot"><a href="#">질환별 특화데이터</a>
+									<div class="submenu-wrap02">
+										<ul class="munu-depth02">
+											<li><a href="#">개요</a></li>
+											<li><a href="#">카탈로그</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">보건복지공공데이터</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="li-num02"><span class="a-depth01"><a href="#">데이터 시각화</a></span>
+						<div class="submenu-wrap">
+							<ul class="munu-depth01">
+								<li class="yesdepth"><a href="#">임상 라이브러리</a>
+									<div class="submenu-wrap02">
+										<ul class="munu-depth02">
+											<li><a href="#">개요</a></li>
+											<li><a href="#">BaselineDB</a></li>
+											<li><a href="#">암공통</a></li>
+											<li><a href="#">위암</a></li>
+											<li><a href="#">유방암</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">공공 라이브러리</a></li>								
+							</ul>
+						</div>
+					</li>
+					<li class="li-num03"><span class="a-depth01"><a href="#">데이터 신청</a></span>
+						<div class="submenu-wrap">
+							<ul class="munu-depth01">
+								<li><a href="#">데이터 신청개요</a></li>
+								<li><a href="#">데이터 활용신청</a></li>
+								<li><a href="#">안심활용센터예약</a></li>
+								<li><a href="#">데이터반입출신청</a></li>
+								<li><a href="#">OPEN API신청</a></li>								
+							</ul>
+						</div>
+					</li>
+					<li class="li-num04"><span class="a-depth01"><a href="#">이용자 지원</a></span>
+						<div class="submenu-wrap">
+							<ul class="munu-depth01">
+								<li class="yesdepth"><a href="#">데이터 교육</a>
+									<div class="submenu-wrap02">
+										<ul class="munu-depth02">
+											<li><a href="#">교육 개요</a></li>
+											<li><a href="#">교육 실습</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">K-CURE 소식</a></li>
+								<li><a href="#">이용가이드</a></li>
+								<li><a href="#">자주 묻는 질문</a></li>
+								<li><a href="#">묻고답하기</a></li>
+								<li><a href="#">데이터 활용사례</a></li>								
+							</ul>
+						</div>
+					</li>
+					<li class="li-num05"><span class="a-depth01"><a href="#">K-CURE 소개</a></span>
+						<div class="submenu-wrap">
+							<ul class="munu-depth01">
+								<li><a href="#">K-CURE 서비스 개요</a></li>
+								<li><a href="#">서비스 유형 및 이용방법</a></li>
+								<li><a href="#">안심활용센터소개</a></li>
+								<li><a href="#">이용자 준수사항</a></li>
+								<li><a href="#">운영조직 및 참여기관</a></li>							
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- //gnb -->
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- visual-wrap -->
+		<div class="visual-wrap">
+			<div class="visual-inwrap">
+				<div class="mainsearch-wrap">
+					<div class="se-inbox">
+						<form action="">
+							<fieldset>
+								<legend>통합 검색</legend>
+								<p class="txt-p01">임상데이터개방, 민간공공결합과 활용을 위한</p>
+								<p class="txt-p02"><strong>K-CURE 플랫폼</strong> 빅데이터<br>연구생태계 조성을 위한 기반</p>
+								<span class="fe-input">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해 주세요">
+									<button type="submit" class="btn-mainsearch"><span class="blind">검색</span></button>
+								</span>
+								<div class="keyword-wrap">
+									<dl class="topk">
+										<dt>자주찾는 검색어</dt>
+										<dd><a href="#"><span>K-cure</span></a></dd>
+										<dd><a href="#"><span>위암</span></a></dd>
+										<dd><a href="#"><span>신청방법</span></a></dd>
+									</dl>
+									<dl class="botk">
+										<dt>추천 검색어</dt>
+										<dd><a href="#"><span>간암</span></a></dd>
+										<dd><a href="#"><span>위암</span></a></dd>
+										<dd><a href="#"><span>신청방법</span></a></dd>
+										<dd><a href="#"><span>위암</span></a></dd>
+										<dd><a href="#"><span>신청방법</span></a></dd>
+										<dd><a href="#"><span>위암</span></a></dd>
+										<dd><a href="#"><span>신청방법</span></a></dd>
+									</dl>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //visual-wrap -->
+
+		<!-- content -->
+		<div id="content">
+			<section class="dclog-wrap">
+				<div class="inbox-wrap ani-motion">
+					<h2>Data Catalog</h2>
+					<p class="txt-top">KCURE운영관리포털에서 수집관리하는 데이터 분류체계입니다.</p>
+					<div class="dclogslide-wrap">
+						<div class="dclogslide-txt">
+							<p class="tit">암임상데이터</p>
+							<p class="txt-num">
+								<span class="type-k"><strong class="num-k">111</strong>건</span>
+								<span class="type-j"><strong class="num-j">98</strong>종</span>
+							</p>
+						</div>
+						<div class="dclogslide-control">
+							<button type="button" class="dclogslide-arrow dclogslide-prev"><span class="blind">이전</span></button>
+							<div class="dclogslide-dot"></div>
+							<span class="txt-sltotal">04</span>
+							<button type="button" class="dclogslide-arrow dclogslide-next"><span class="blind">다음</span></button>
+						</div>
+						<div class="dclogslidein-wrap">
+							<div class="dclogslide-for">
+								<div class="item num01">
+									<div class="inbox">
+										<p class="tit blind">암임상데이터</p>
+										<p class="txt-num blind">
+											<span class="type-k"><strong class="num-k">111</strong>건</span>
+											<span class="type-j"><strong class="num-j">98</strong>종</span>
+										</p>
+										<p class="txt-infor">암 임상데이터 셋을 K-CURE에서 표준화 및 정제하여 제공합니다.</p>
+										<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+									</div>
+								</div>
+								<div class="item num02">
+									<div class="inbox">
+										<p class="tit blind">암공공데이터</p>
+										<p class="txt-num blind">
+											<span class="type-k"><strong class="num-k">222</strong>건</span>
+											<span class="type-j"><strong class="num-j">98</strong>종</span>
+										</p>
+										<p class="txt-infor">모든 암등록환자의 건강검진, 사망원인, 청구자료를 결합한 전주기 이력관리형 데이터 셋을 제공합니다.</p>
+										<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+									</div>
+								</div>
+								<div class="item num03">
+									<div class="inbox">
+										<p class="tit blind">데중병원 특화DB</p>
+										<p class="txt-num blind">
+											<span class="type-k"><strong class="num-k">333</strong>건</span>
+											<span class="type-j"><strong class="num-j">98</strong>종</span>
+										</p>
+										<p class="txt-infor">의료데이터 중심병원에서 구축한 특화 데이터베이스를 쉽게 검색해고 활용할 수 있도록 도와줍니다.</p>
+										<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+									</div>
+								</div>
+								<div class="item num04">
+									<div class="inbox">
+										<p class="tit blind">보건의료 데이터</p>
+										<p class="txt-num blind">
+											<span class="type-k"><strong class="num-k">555</strong>건</span>
+											<span class="type-j"><strong class="num-j">98</strong>종</span>
+										</p>
+										<p class="txt-infor">여러 기관에 축적된 보건의료데이터를 쉽게 검색하고 활용할 수 있도록 도와줍니다.</p>
+										<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+									</div>
+								</div>
+							</div>
+							<!-- //dclogslide-for -->
+							<ul class="dclogslide-nav">
+								<li class="on"><button type="button"><span>암임상데이터</span></button></li>
+								<li><button type="button"><span>암공공데이터</span></button></li>
+								<li><button type="button"><span>데중병원 특화DB</span></button></li>
+								<li><button type="button"><span>보건의료 데이터</span></button></li>
+							</ul>
+							<!-- //dclogslide-nav -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //dclog-wrap -->
+
+			<section class="datatype-wrap">
+				<div class="inbox-wrap ani-motion">
+					<h2>질환별Data현황</h2>
+					<p class="txt-top">KCURE운영관리포털에서 질환별 수집된 Data현황입니다.</p>
+					<div class="datatype-box">
+						<div class="datatype-txt">
+							<p class="tit">암질환</p>
+							<p class="txt-num">
+								<span class="type-k"><strong class="num-k">86</strong>건</span>
+								<span class="type-j"><strong class="num-j">98</strong>종</span><!-- 기타질환일 경우 노출 -->
+							</p>
+						</div>
+						<ul class="datatype-tabul">
+							<li class="on"><a href="#dtab-box01">암질환</a></li>
+							<li><a href="#dtab-box02">호흡계통질환</a></li>
+							<li><a href="#dtab-box03">순환계통질환</a></li>
+							<li><a href="#dtab-box04">기타질환</a></li>
+						</ul>
+						<div class="datatype-tabcon" id="dtab-box01" style="display:block">
+							<h3 class="tit blind">암질환</h3>
+							<p class="txt-infor"><span class="in-txt">K-CURE는 15개 의료데이터중심병원과 컨소시엄으로 질환별 특화데이터를 구축 및 확장하고 있습니다. <br>21.12월 기준 암질환은 {<em class="num-all">86</em>}건의 데이터를 구축하였습니다.</span></p>
+							<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+							<div class="datalist-ul" id="datalist-ul01">
+								<div class="item">
+									<span class="icon ico-01"></span>
+									<p class="txt">위암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-02"></span>
+									<p class="txt">유방암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-03"></span>
+									<p class="txt">대장암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-04"></span>
+									<p class="txt">간암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-05"></span>
+									<p class="txt">췌담도암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-06"></span>
+									<p class="txt">신장암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-07"></span>
+									<p class="txt">폐암 [<span class="txt-num">9</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-08"></span>
+									<p class="txt">자궁경부암 [<span class="txt-num">9</span>건]</p>
+								</div>
+							</div>
+						</div>
+						<!-- //암질환 -->
+						<div class="datatype-tabcon" id="dtab-box02">
+							<h3 class="tit blind">호흡계통 질환</h3>
+							<p class="txt-infor"><span class="in-txt">K-CURE는 15개 의료데이터중심병원과 컨소시엄으로 질환별 특화데이터를 구축 및 확장하고 있습니다. <br>21.12월 기준, 호흡계통 질환은 {<em class="num-all">10</em>}건의 데이터를 구축하였습니다.</span></p>
+							<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+							<div class="datalist-ul type02" id="datalist-ul02">
+								<div class="item">
+									<span class="icon ico-09"></span>
+									<p class="txt">호흡기 [<span class="txt-num">7</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-10"></span>
+									<p class="txt">COVID-19 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-11"></span>
+									<p class="txt">천식 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-12"></span>
+									<p class="txt">폐렴 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-13"></span>
+									<p class="txt">COPD [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-14"></span>
+									<p class="txt">결핵 [<span class="txt-num">3</span>건]</p>
+								</div>
+							</div>
+						</div>
+						<!-- //호흡계통 질환 -->
+						<div class="datatype-tabcon" id="dtab-box03">
+							<h3 class="tit blind">순환계통 질환</h3>
+							<p class="txt-infor"><span class="in-txt">K-CURE는 15개 의료데이터중심병원과 컨소시엄으로 질환별 특화데이터를 구축 및 확장하고 있습니다.<br>21.12월 기준, 순환계통질환은 {<em class="num-all">86</em>}건의 데이터를 구축하였습니다.</span></p>
+							<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+							<div class="datalist-ul type02" id="datalist-ul03">
+								<div class="item">
+									<span class="icon ico-15"></span>
+									<p class="txt">심뇌혈관질환 [<span class="txt-num">7</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-16"></span>
+									<p class="txt">뇌졸증 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-17"></span>
+									<p class="txt">관상동맥 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-18"></span>
+									<p class="txt">신장이식 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-19"></span>
+									<p class="txt">중환자실 wave [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-20"></span>
+									<p class="txt">허혈성뇌졸증 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-21"></span>
+									<p class="txt">심전도 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-22"></span>
+									<p class="txt">심청진음 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-23"></span>
+									<p class="txt">심전도 판독문 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-24"></span>
+									<p class="txt">경동맥초음파 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-25"></span>
+									<p class="txt">심뇌혈관<br> 건강검진 [<span class="txt-num">1</span>건]</p>
+								</div>
+							</div>
+						</div>
+						<!-- //순환계통질환 -->	
+						<div class="datatype-tabcon" id="dtab-box04">
+							<h3 class="tit blind">기타 질환</h3>
+							<p class="txt-infor"><span class="in-txt">K-CURE는 15개 의료데이터중심병원과 컨소시엄으로 질환별 특화데이터를 구축 및 확장하고 있습니다. <br>21.12월 기준, 기타 질환은 {<em class="num-allj">22</em>}여종 {<em class="num-all">32</em>}여건의 데이터를 구축하였습니다.</span></p>
+							<div class="btn-box"><a href="#" class="btn-more">More</a></div>
+							<div class="datalist-ul type02" id="datalist-ul04">
+								<div class="item">
+									<span class="icon ico-26"></span>
+									<p class="txt">수면질환 [<span class="txt-num">7</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-27"></span>
+									<p class="txt">담낭/담석 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-28"></span>
+									<p class="txt">치매 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-29"></span>
+									<p class="txt">근골격계 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-30"></span>
+									<p class="txt">검진코호트 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-31"></span>
+									<p class="txt">슬관절 전치환술 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-32"></span>
+									<p class="txt">고관절 주위골절 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-33"></span>
+									<p class="txt">건강인 코호트 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-34"></span>
+									<p class="txt">공공의료 코호트 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-35"></span>
+									<p class="txt">생체신호 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-36"></span>
+									<p class="txt">생체신호 wave [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-37"></span>
+									<p class="txt">안질환 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-38"></span>
+									<p class="txt">전립선비대증 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-39"></span>
+									<p class="txt">다발골수종 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-40"></span>
+									<p class="txt">응급진료 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-41"></span>
+									<p class="txt">응급특화 [<span class="txt-num">2</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-42"></span>
+									<p class="txt">산업보건 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-43"></span>
+									<p class="txt">내분비계 희귀질환 [<span class="txt-num">3</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-44"></span>
+									<p class="txt">건강검진 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-45"></span>
+									<p class="txt">망막질환 [<span class="txt-num">5</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-46"></span>
+									<p class="txt">어지럼증 [<span class="txt-num">1</span>건]</p>
+								</div>
+								<div class="item">
+									<span class="icon ico-46"></span>
+									<p class="txt">수면다원검사 [<span class="txt-num">1</span>건]</p>
+								</div>
+							</div>
+						</div>
+						<!-- //기타 질환 -->	
+					</div>
+				</div>
+			</section>
+			<!-- //datatype-wrap -->
+
+			<section class="network-wrap">
+				<div class="inbox-wrap ani-motion">
+					<h2>K-CURE 임상데이터 네트워크</h2>
+					<p class="txt-top">K-CURE 임상데이터 네트워크에 병원관련 글</p>
+					<div class="tab-type01">
+						<ul>
+							<li><a href="#tab-box01" class="tabview-link"><span>공공기관</span></a></li>
+							<li class="on"><a href="#tab-box02" class="tabview-link"><span>의료중심병원</span></a></li>
+						</ul>
+					</div>
+					<div id="tab-box01" style="display:none">
+						<div class="logoslide-wrap">
+							<div class="logoslide-inbox" id="logoslide01">
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_klogo_01.png" alt="건강보험심사평가원"></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_klogo_02.png" alt="통계청"></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_klogo_03.png" alt="국민건강보험"></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_klogo_04.png" alt="보건복지부"></span></a></div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-box02">
+						<div class="logoslide-wrap">
+							<div class="logoslide-inbox" id="logoslide02">
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo01.png" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo02.png" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo03.png" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo04.jpg" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo05.png" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo06.png" alt=""></span></a></div>
+								<div class="item"><a href="#"><span><img src="../../images/logo/img_logo07.png" alt=""></span></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //network-wrap -->
+
+			<section class="mainnotice-wrap">
+				<div class="inbox-wrap ani-motion">
+					<div class="mainnotice-box">
+						<h2>공지사항</h2>
+						<ul>
+							<li class="topic">
+								<a href="#">
+									<p class="tit">K-Cure 플랫폼 구축관련 간담회</p>
+									<p class="txt">K-Cure 플랫폼 구축관련 간담회 개최하여 각 병원의 공공데이터를 취합한 빅데이터를 활용하여K-Cure 플랫폼 구축관련 간담회 개최하여 각 병원의 공공데이터를 취합한 빅데이터를 활용하여</p>
+									<p class="date"><span class="year">2022. 11</span><span class="day">13</span></p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">위암 결합데이터 라이브러리</p>
+									<p class="date">2022. 11. 04</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">의료중심데이터병원 소개</p>
+									<p class="date">2022. 11. 04</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">KCure운영관리포탈 착수</p>
+									<p class="date">2022. 11. 04</p>
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="btn-more">More</a>
+					</div>
+					<!-- //mainnotice-box -->
+					<div class="mainlink-box">
+						<ul class="icolink-ul">
+							<li class="link-faq"><a href="#"><span class="txt">K-CURE FAQ</span></a></li>
+							<li class="link-news"><a href="#"><span class="txt">K-CURE NEWS</span></a></li>
+							<li class="link-infor"><a href="#"><span class="txt">안심활용 센터소개</span></a></li>
+						</ul>
+					</div>
+					<!-- //mainlink-box -->
+				</div>
+			</section>
+			<!-- //mainnotice-wrap -->
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer-wrap">
+			<div class="footer-link">
+				<div class="footlogo"><a href="/" title="메인페이지로 이동"><span class="blind">K-CURE 운영관리 포털</span></a></div>
+				<ul class="link-ul">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">고객의소리</a></li>
+				</ul>
+			</div>
+			<!-- //footer-link -->
+			<div class="footer-site">
+				<button type="button" class="btn-sopen"><span>관련사이트</span></button>
+				<div class="linklist-box">
+					<div class="inbox">
+						<ul>
+							<li><a href="#" target="_blank" title="새창">링크1</a></li>
+							<li><a href="#" target="_blank" title="새창">링크2</a></li>
+							<li><a href="#" target="_blank" title="새창">링크3</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //footer-site -->
+			<address>(04513) 서울특별시 중구 세종대로 39 11층 한국보건의료정보원 (남대문로4가 45, 서울상공회의소)</address>
+			<p class="txt-copy">COPYRIGHT©By KHIS. All rights Reserved</p>
+			<button type="button" class="btn-wintop"><span class="blind">최상단으로 이동</span></button>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+</body>
+</html>
